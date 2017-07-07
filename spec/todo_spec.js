@@ -10,7 +10,9 @@ describe('To Do List', function() {
     var form = $('form')[0];
     var formSubmitEvent = $._data(form, "events");
     var myKey = [];
-    for (var key in formSubmitEvent){ myKey.push(key);}
+    for (var key in formSubmitEvent) {
+      myKey.push(key);
+    }
     expect(myKey[0]).toEqual("submit");
   });
 
